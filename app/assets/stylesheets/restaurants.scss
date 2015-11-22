@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-	background-color: #CCC;
+	background-color: #EEE;
 }
 
 .table-hover>tbody>tr:hover {
@@ -13,4 +13,14 @@ body{
 
 .modal-content{
 	color:white;
+}
+
+.jumbotron {
+    padding-bottom: 180px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	background-color: #EEE;
+	color: black;
 }

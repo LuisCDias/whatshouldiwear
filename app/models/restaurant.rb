@@ -6,7 +6,7 @@ class Restaurant
 		  faraday.response :logger                  # log requests to STDOUT
 		  faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
 		end
-		#raise "https://developers.zomato.com/api/v2.1/search?q=#{URI.escape(q)}"
+
 		response = conn.get "/api/v2.1/search?q=#{URI.escape(q)}" do |req|    # GET http://sushi.com/nigiri/sake.json
 			req.headers['Content-Type'] = 'application/json'
 			req.headers['user_key'] = 'd4b925d03141f6f9fbff52d0e57a49c7'
