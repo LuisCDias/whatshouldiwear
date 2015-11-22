@@ -20,7 +20,7 @@ class Restaurant
 		rescue Exception => e
 			return []
 		end		
-		
+		return [] if unparsed_restaurants["restaurants"].nil?
 		parsed_restaurants = []
 		unparsed_restaurants["restaurants"].each do |unparsed_restaurant|
 			unparsed_restaurant = unparsed_restaurant["restaurant"]
