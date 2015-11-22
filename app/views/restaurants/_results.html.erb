@@ -1,0 +1,25 @@
+<div class="bs-component">
+	<div class="col-lg-offset-2 col-lg-8 text-center" style="color:black">
+	<% if restaurants.empty? %>
+		<h2>No results found </h2>
+	<% else %>
+		<h2>Found <%= restaurants.count %> restaurants </h2>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="text-center">Name</th>
+					<th class="text-center">City</th>
+					<th class="text-center">Rating</th>
+					<th class="text-center">Fanciness</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% restaurants.each do |restaurant| %>
+					<%= render 'restaurant', restaurant:restaurant %>
+				<% end %>
+			</tbody>
+		</table
+	<% end %>
+	</div>
+</div>

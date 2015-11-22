@@ -1,0 +1,3 @@
+<%= render 'layouts/nav' %>
+<%= render 'jumbotron' %>
+<%= render 'results', restaurants: @restaurants if params[:q].present? %>

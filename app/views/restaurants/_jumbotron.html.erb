@@ -1,0 +1,17 @@
+<div class="bs-component text-center">  
+	<div class="jumbotron" style="background-image: url(http://images.hackett.com/media/wysiwyg/aw15_suits_banner_1.jpg)">
+    	<h1>Don't know what to wear?</h1>
+    	<p>We help you getting your clothing right for your date on that <del>cheap</del> fancy restaurant .</p>
+    	<div class="col-md-9 col-md-offset-3">
+	    	<%= form_tag restaurants_path, method: :get, class: "navbar-form navbar-left", role: "search", style: "width:66%;" do %>
+	          <div class="form-group" style="width:100%">
+	            <input type="text" name="q" class="form-control" placeholder="Search for restaurants" style="width:100%" value="<%= params[:q] %>">
+	          </div>
+	          <p>
+	    		<button class="btn btn-primary btn-lg" data-disable-with="Searching..." style="margin-top:20px;">Find restaurants</button>
+	    	  </p>
+	        <% end %>
+	    </div>    	    	
+  	</div>
+	<div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+</div>
